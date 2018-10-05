@@ -1,0 +1,33 @@
+{
+  "name": "pug-bem-plain-loader",
+  "version": "1.0.2",
+  "description": "Pug that adds BEM shortcuts to plain html loader for webpack",
+  "main": "index.js",
+  "keywords": [
+    "pug",
+    "bem",
+    "loader",
+    "webpack",
+    "plain",
+    "pug-plain-loader",
+    "pug-bem",
+    "vue",
+    "single-file",
+    "components"
+  ],
+  "author": {
+    "name": "Legostaev Vadim",
+    "email": "legostaev.vadim@mail.ru"
+  },
+  "license": "ISC",
+  "peerDependencies": {
+    "pug": "^2.0.0"
+  },
+  "dependencies": {
+    "pug-bem": "^1.0.0",
+    "loader-utils": "^1.1.0"
+  },
+  "devDependencies": {
+    "pug": "^2.0.3"
+  }
+}
