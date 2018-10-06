@@ -4,6 +4,8 @@
 
 **pug-bem-plain-loader** is a combination of [pug-plain-loader](https://www.npmjs.com/package/pug-plain-loader) and [pug-bem](https://www.npmjs.com/package/pug-bem) plugins
 
+- **[BEM](https://en.bem.info/methodology/quick-start/)**
+
 # Install
 
 ```
@@ -54,8 +56,8 @@ module: {
             'pug': {
               loader: 'pug-bem-plain-loader',
               options: {
-                e: '**', /* element separator, default '__'  */
-                m: '++'  /* modifier separator, default '--' */
+                e: '**', // element separator, default: __
+                m: '++'  // modifier separator, default: --
               }
             }
           }
@@ -65,6 +67,8 @@ module: {
     ]
   }
 ```
+
+- **[Options](https://pugjs.org/api/reference.html)**
 
 ### App.vue
 
