@@ -10,6 +10,9 @@ module.exports = function (source) {
     compileDebug: this.debug || false
   }, loaderUtils.getOptions(this))
 
+  bem.e = options.e || bem.e
+  bem.m = options.m || bem.m
+
   const template = pug.compile(source, options)
   template.dependencies.forEach(this.addDependency)
   return template(options.data || {})

@@ -7,7 +7,7 @@
 # Install
 
 ```
-npm install pug pug-bem-plain-loader --save-dev
+npm install pug pug-bem pug-bem-plain-loader --save-dev
 ```
 
 ## Usage
@@ -31,6 +31,33 @@ module: {
             'pug': [
               'pug-bem-plain-loader'
             ]
+          }
+        }
+      }
+      ... // other rules
+    ]
+  }
+```
+
+**or**
+
+```js
+module: {
+    rules: [
+      ... // other rules
+      {
+        test: /\.vue$/,
+        loader: 'vue-loader',
+        options: {
+          loaders: {
+            // this applies to <template lang="pug"> in Vue components
+            'pug': {
+              loader: 'pug-bem-plain-loader',
+              options: {
+                e: '**', /* element separator, default '__'  */
+                m: '++'  /* modifier separator, default '--' */
+              }
+            }
           }
         }
       }
