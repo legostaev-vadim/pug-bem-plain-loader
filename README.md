@@ -7,7 +7,7 @@
 # Install
 
 ```
-npm install pug pug-bem pug-bem-plain-loader --save-dev
+npm install pug pug-bem-plain-loader --save-dev
 ```
 
 ## Usage
