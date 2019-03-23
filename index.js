@@ -3,6 +3,7 @@ const bem = require('pug-bem')
 const loaderUtils = require('loader-utils')
 
 module.exports = function (source) {
+
   const options = Object.assign({
     filename: this.resourcePath,
     doctype: 'html',
@@ -15,5 +16,6 @@ module.exports = function (source) {
 
   const template = pug.compile(source, options)
   template.dependencies.forEach(this.addDependency)
+
   return template(options.data || {})
 }
