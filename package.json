@@ -1,6 +1,6 @@
 {
   "name": "pug-bem-plain-loader",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Pug that adds BEM shortcuts to plain html loader for webpack",
   "main": "index.js",
   "keywords": [
