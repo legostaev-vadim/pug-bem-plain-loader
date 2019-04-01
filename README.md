@@ -15,7 +15,7 @@ loaders: {
   'pug': {
     loader: 'pug-bem-plain-loader',
     options: {
-      b: 'my-'
+      b: 'my-' // block prefix
     }
   }
 }
