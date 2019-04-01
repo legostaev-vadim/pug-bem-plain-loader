@@ -11,9 +11,7 @@ module.exports = function (source) {
     compileDebug: this.debug || false
   }, loaderUtils.getOptions(this))
 
-  if(options.b === true) bem.b = 'b-'
-  else if (options.b) bem.b = options.b
-
+  bem.b = options.b || bem.b
   bem.e = options.e || bem.e
   bem.m = options.m || bem.m
 
