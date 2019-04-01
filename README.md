@@ -6,6 +6,40 @@
 
 - **[BEM](https://en.bem.info/methodology/quick-start/)**
 
+# New! v1.1.0
+
+Now you can specify your own prefixes for blocks in the **b** property:
+
+```js
+options: {
+  loaders: {
+    'pug': {
+      loader: 'pug-bem-plain-loader',
+      options: {
+        b: 'my-'
+      }
+    }
+  }
+}
+```
+
+**or**
+
+```js
+options: {
+  loaders: {
+    'pug': {
+      loader: 'pug-bem-plain-loader',
+      options: {
+        b: true // default 'b-'
+      }
+    }
+  }
+}
+```
+
+- **[More](https://www.npmjs.com/package/pug-bem)**
+
 # Install
 
 ```
